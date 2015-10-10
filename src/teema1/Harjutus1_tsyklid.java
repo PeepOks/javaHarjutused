@@ -25,7 +25,6 @@ public class Harjutus1_tsyklid {
         yl3();
 
     }
-
         private  static void yl1(){
             System.out.println("1. Ülesanne");
             for(int i=10; i>0; i--){
