@@ -18,6 +18,21 @@ package teema1;
  */
 public class Harjutus1_tsyklid {
     public static void main(String[] args) {
+        int arv;
+        for(int i=0;i<10;i++){
+            arv=i;
+            for(int j=0; j<10; j++) {
+                System.out.print(arv + " ");
+                arv++;
+                if (arv==10){
+                    arv=0;
+                }
+
+
+            }
+
+            System.out.println();
+        }
 
     }
 }
