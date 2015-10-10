@@ -18,21 +18,50 @@ package teema1;
  */
 public class Harjutus1_tsyklid {
     public static void main(String[] args) {
-        int arv;
-        for(int i=0;i<10;i++){
-            arv=i;
-            for(int j=0; j<10; j++) {
-                System.out.print(arv + " ");
-                arv++;
-                if (arv==10){
-                    arv=0;
+        yl1();
+        System.out.println();
+        yl2();
+        System.out.println();
+        yl3();
+
+    }
+
+        private  static void yl1(){
+            System.out.println("1. Ülesanne");
+            for(int i=10; i>0; i--){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+        public static void yl2(){
+            System.out.println("2. Ülesanne");
+
+            for (int i=0; i<10;i++){
+                if (i%2!=0){
+                    System.out.print(i + " ");
                 }
 
-
             }
+            System.out.println();
+        }
+        public static void yl3(){
+            System.out.println("3. Ülesanne");
+            int arv;
+            for (int i = 0; i < 10; i++) {
+                arv = i;
+                for (int j = 0; j < 10; j++) {
+                    System.out.print(arv + " ");
+                    arv++;
+                    if (arv == 10) {
+                        arv = 0;
+                    }
+                }
 
+                System.out.println();
+            }
             System.out.println();
         }
 
-    }
+
 }
+
