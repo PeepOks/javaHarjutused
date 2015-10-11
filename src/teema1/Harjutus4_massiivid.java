@@ -9,4 +9,7 @@ package teema1;
  * main() meetodi saad lühendiga psvm.
  */
 public class Harjutus4_massiivid {
+
+
+
 }

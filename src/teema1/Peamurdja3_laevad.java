@@ -16,4 +16,39 @@ import java.util.Scanner;
  *    nii vertikaalselt kui ka horisontaalselt?
  */
 public class Peamurdja3_laevad {
+
+    public static void main(String[] args) {
+
+        int[][] Ruudustik = new int[10][10];
+
+        for(int i=0; i<Ruudustik.length;i++){
+
+            for (int j=0; j<Ruudustik.length;j++){
+                Ruudustik[i][j]= 0;
+            }
+        }
+
+        for (int i = 0; i < 10; i++) {
+            Ruudustik[(int)(Math.random()*10)][(int)(Math.random()*10)]= 1;
+        }
+
+
+        for (int i=0; i < Ruudustik.length;i++){
+            for (int j=0; j<Ruudustik[i].length;j++){
+
+                if (Ruudustik[i][j]==0){
+
+                }else if (Ruudustik[i][j]==1){
+                    System.out.println("Laev oli ruudul [" + i +"]["+j+"]");
+                    Ruudustik[i][j]=0;
+                    System.out.println("Aga lasime põhja");
+                }
+
+            }
+        }
+
+
+    }
+
+
 }
