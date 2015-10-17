@@ -42,6 +42,7 @@ public class Peamurdja3_laevad {
         System.out.println("Sisesta x kordinaat");
         int ykoordinaat = sc.nextInt();
 
+        /*
         while (gameover(Ruudustik)) {
             System.out.println("Sisesta üks nr");
             int sisestus=kasutaja.nextInt();
@@ -56,6 +57,7 @@ public class Peamurdja3_laevad {
                 System.out.println("juba proovisid");
             }
         }
+        */
         System.out.println("võitsid");
         /*
         for (int i=0; i < Ruudustik.length;i++){
