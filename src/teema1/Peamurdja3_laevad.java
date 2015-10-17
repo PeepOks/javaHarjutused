@@ -22,26 +22,58 @@ public class Peamurdja3_laevad {
         int[][] Ruudustik = new int[10][10];
 
         for(int i=0; i<Ruudustik.length;i++){
-
             for (int j=0; j<Ruudustik.length;j++){
                 Ruudustik[i][j]= 0;
             }
         }
-
-        for (int i = 0; i < 10; i++) {
-            Ruudustik[(int)(Math.random()*10)][(int)(Math.random()*10)]= 1;
+        //Lisame 5 1x2 laeva
+        int rida=0;
+        int veerg=0;
+        for (int i = 0; i < 5; i++) {
+            rida=(int)(Math.random()*10);
+            veerg=(int)(Math.random()*10);
+            while (true){
+                if (Ruudustik[rida][veerg]==1){
+                    System.out.println("Seal oli juba laev olemas");
+                    rida=(int)(Math.random()*10);
+                    veerg=(int)(Math.random()*10);
+                } else {
+                    break;
+                }
+            }
+            Ruudustik[rida][veerg]= 1;
         }
+
+        /*
+        for (int i = 1; i <= 10; i++) {
+            xkoordinaat=(int)(Math.random()*10);
+            ykoordinaat=(int)(Math.random()*10);
+            while (true){
+                if (Ruudustik[xkoordinaat][ykoordinaat]==1){
+                    System.out.println("Seal oli juba laev olemas");
+                    xkoordinaat=(int)(Math.random()*10);
+                    ykoordinaat=(int)(Math.random()*10);
+                } else {
+                    break;
+                }
+            }
+            //System.out.println(i + ". laevuke koordinaadile [" + xkoordinaat + "]["+ykoordinaat+"]");
+            Ruudustik[xkoordinaat][ykoordinaat]= 1;
+        }
+        */
+
+
 
         for (int i = 0; i < Ruudustik.length; i++) {
             System.out.println(Arrays.toString(Ruudustik[i]));
         }
-
+        /*
         Scanner sc = new Scanner(System.in);
         System.out.println("Sisesta x kordinaat");
         int xkoordinaat = sc.nextInt();
         System.out.println("Sisesta x kordinaat");
         int ykoordinaat = sc.nextInt();
-
+        */
         /*
         while (gameover(Ruudustik)) {
             System.out.println("Sisesta üks nr");
