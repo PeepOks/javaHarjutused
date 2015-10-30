@@ -16,9 +16,9 @@ public class Harjutus4_massiivid {
         System.out.println("Esimene ülesanne:");
         yl1();
         System.out.println("Teine ülesanne:");
-        yl2();
+        //yl2();
         System.out.println("Kolmas ülesanne");
-        yl3();
+        //yl3();
     }
 
     private static void yl1 (){
