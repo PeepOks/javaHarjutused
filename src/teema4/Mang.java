@@ -11,7 +11,7 @@ public class Mang {
         /*
         * 1. Seadistame mängu
         */
-        Meri meri = new Meri(10);
+        Meri meri = new Meri(Main.ruute);
 
         Mangija mangija = new Mangija();
 

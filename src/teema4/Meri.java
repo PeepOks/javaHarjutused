@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class Meri {
     private int LauaServaPikkus;
-    private Laev[] laevastik = new Laev[1];
+    private Laev[] laevastik = new Laev[Main.laevu];
 
     public Meri(int pikkus) {
         LauaServaPikkus = pikkus;
